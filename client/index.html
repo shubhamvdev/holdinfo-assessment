@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOLDINFO App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- START: Container -->
+  <div class="container">
+
+    <!-- START: Header -->
+    <div class="header">
+
+      <!-- START: Header Left -->
+      <div class="header-left">
+        <h1>HOLDINFO<span>.com</span></h1>
+        <h3>Powered By <span>Finstreet</span></h3>
+      </div>
+      <!-- END: Header Left -->
+
+      <!-- START: Header Middle -->
+      <div class="header-middle">
+        <select name="currency">
+          <option value="INR">INR</option>
+        </select>
+        <select name="crypto-currency">
+          <option value="BTC">BTC</option>
+        </select>
+      </div>
+      <!-- END: Header Middle -->
+
+      <!-- START: Header Right -->
+      <div class="header-right">
+        <div class="number">58</div>
+        <button class="btn btn-primary">
+          Connect Telegram
+        </button>
+        <label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <!-- END: Header Right -->
+
+    </div>
+    <!-- END: Header -->
+
+    <!-- START: Table-->
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Last</th>
+          <th>Buy/Sell Price</th>
+          <th>Volume</th>
+          <th>Base Unit</th>
+        </tr>
+      </thead>
+      <tbody id="record-table-body">
+      </tbody>
+    </table>
+
+  </div>
+  <!-- END: Containter -->
+
+  <script src="index.js"></script>
+</body>
+
+</html>
